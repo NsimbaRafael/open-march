@@ -486,3 +486,101 @@ footer h1{
 footer p{
     color: var(--cor2);
 }
+
+
+
+
+
+/* section to build call_back style */
+
+
+.atendimentos_all{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor2);
+}
+.atendimentos_all .title{
+    padding: 20px;
+    margin-bottom: 25px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+.atendimentos_all .title .p1{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 10px;
+    color: var(--cor3);
+}
+.atendimentos_all .title .p2{
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 10px;
+    color: var(--cor4);
+}
+.atendimentos_all .atendimentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 90px;
+    flex-wrap: wrap;
+}
+.atendimentos .atendimentos_card{
+    width: 300px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    display: flex;
+    flex-direction: column;
+}
+.atendimentos_card .titulo{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    color: var(--cor4);
+    width: 50%;
+}
+.atendimentos_card .desc{
+    font-size: 0.8rem;   
+}
+.atendimentos_card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.atendimentos_card .icon i{
+    padding: 7px;
+    font-size: 5rem;
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+    color: var(--cor2);
+}
+.atendimentos_card .icon i:nth-child(1){
+    background-color: var(--cor4);
+
+}
+.atendimentos_card .icon i:nth-child(2){
+    background-color: var(--cor3);
+
+}
+.atendimentos_card .icon i:nth-child(3){
+    background-color: var(--cor5);
+
+}
+
+/* section to buiid about us style css */
+
+.about_usNome{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin:10px 15px ;
+    color: var(--cor3);
+}
