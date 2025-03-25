@@ -1,0 +1,23 @@
+@media screen and (max-width:678px) {
+    .slider .list .item .content{
+        padding-right: 0;
+    }
+    .slider .list .item .content .title{
+        font-size: 30px;
+    }
+    .thumbnail{
+        display: none;
+    }
+    .nextPrevArrows{
+        top: 90%;
+        right: 5%;
+       
+    }
+    .slider .list .item .content .type{
+        font-size: 2.6rem;
+        font-weight: bold;
+        line-height: 120%;
+    
+    }
+    
+}

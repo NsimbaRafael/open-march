@@ -1,0 +1,210 @@
+{% extends 'partials/base.html' %}
+
+{% block conteudo %}
+{% load static %}
+<div class="slider">
+
+
+
+    <div class="list">
+     
+        <div class="item">
+            <!-- <img src="img/1.jpg" alt=""> -->
+            <img src="{% static 'omWeb/img/1.jpg' %}" alt="">
+            <div class="content">
+                <div class="title">Open March</div>
+                <!-- <div class="type">Girl</div> -->
+                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis illum, porro doloribus cumque aliquam tempore itaque ea quasi architecto laudantium fugiat autem ex. Maxime amet ad repudiandae veritatis tenetur quisquam!</div>
+                <div class="btn">
+                    <button>See more...</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/1.jpg' %}" alt="">
+            <div class="content">
+                <div class="title">Open March</div>
+                 <div class="type">Descubra mais</div> 
+                <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis illum, porro doloribus cumque aliquam tempore itaque ea quasi architecto laudantium fugiat autem ex. Maxime amet ad repudiandae veritatis tenetur quisquam!</div>
+                <div class="btn">
+                    <button>See more...</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+            <div class="content">
+                <div class="title">Open March</div>
+                <div class="type">Visão</div>
+                <div class="desc">Ser reconhecida como uma empresa líder e inovadora, capaz de transformar desafios em oportunidades e impulsionar o crescimento sustentável dos setores de Oil & Gás, Banca e Seguros, e Indústria Mineira.!</div>
+                <div class="btn">
+                    <button>See more...</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/3.jpg' %}" alt="">
+            <div class="content">
+                <div class="title"> Open March</div>
+                <div class="type">Missão</div>
+                <div class="desc">Fornecer bens e serviços de alta qualidade para os setores de Oil & Gás, Banca e Seguros, e Indústria Mineira, agregando valor aos nossos clientes por meio de soluções inovadoras, eficientes e sustentáveis.
+                </div>
+                <div class="btn">
+                    <button>See more...</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/4.jpg' %}" alt="">
+            <div class="content">
+                <div class="title">Open March </div>
+                <div class="type">Objectivo</div>
+                <div class="desc">Ser a principal referência no fornecimento de bens e serviços para os setores de Oil & Gás, Banca e Seguros, e Indústria Mineira, destacando-se pela excelência, inovação e compromisso inabalável com a sustentabilidade.</div>
+                <div class="btn">
+                    <button>See more...</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/5.jpg' %}" alt="">
+            <div class="content">
+                <div class="title">Open March</div>
+                <div class="type">Responsabilidade</div>
+                <div class="desc">Nossa responsabilidade social começa pelo que está mais próximo: a natureza e o meio ambiente. Entendemos que tudo depende do equilíbrio ambiental, pois dele vêm os recursos que sustentam a vida, os negócios e o progresso.</div>
+                <div class="btn">
+                    <button>See more...</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="thumbnail">
+        <div class="item">
+            <img src="{% static 'omWeb/img/1.jpg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/3.jpg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/4.jpg' %}" alt="">
+        </div>
+        <div class="item">
+            <img src="{% static 'omWeb/img/5.jpg' %}" alt="">
+        </div>
+    </div>
+
+    <div class="nextPrevArrows">
+        <button class="prev"><</button>
+        <button class="next">></button>
+    </div>
+</div>
+
+
+
+
+
+
+                                        <!-- divi para serviços -->
+
+<h1>Serviços</h1>
+<div class="servicos">
+    <!-- {% for servico in servicos %}
+    <div class="servicos_card">
+        <img src="img/1.jpg" alt="">
+        <div class="title">{{servico.nome}}</div>
+        <div class="desc">{{servico.desc}}</div>
+        {% endfor %} -->
+     <div class="servicos_card">
+        <img src="{% static 'omWeb/img/1.jpg' %}" alt="">
+        <div class="title">Titulo</div>
+        <div class="desc">Essa é uma descrição
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repudiandae harum repellat iusto corrupti quaerat cum, vel ea, voluptatibus corporis cupiditate nemo unde quasi, dicta hic eveniet maiores voluptatem magni?
+        </div>
+    </div>
+    <div class="servicos_card">
+        <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+        <div class="title">Titulo</div>
+        <div class="desc">Essa é uma descrição
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nam quae officiis fugiat blanditiis, magni nulla est ullam molestias atque tempora laboriosam. Molestias ipsa doloremque voluptate tenetur autem expedita tempora?
+        </div>
+    </div>
+    <div class="servicos_card">
+        <img src="{% static 'omWeb/img/3.jpg' %}" alt="">
+        <div class="title">Titulo</div>
+        <div class="desc">Essa é uma descrição
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum nulla debitis cupiditate recusandae non? Expedita vitae soluta laborum dicta quas sunt debitis ipsum, in cupiditate, dolores illum omnis. Alias?
+        </div>
+        
+    </div>
+    <div class="servicos_card">
+        <img src="{% static 'omWeb/img/4.jpg' %}" alt="">
+        <div class="title">Titulo</div>
+        <div class="desc">Essa é uma descrição
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum nulla debitis cupiditate recusandae non? Expedita vitae soluta laborum dicta quas sunt debitis ipsum, in cupiditate, dolores illum omnis. Alias?
+        </div>
+        
+    </div>
+    <div class="servicos_card">
+        <img src="{% static 'omWeb/img/5.jpg' %}" alt="">
+        <div class="title">Titulo</div>
+        <div class="desc">Essa é uma descrição
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum nulla debitis cupiditate recusandae non? Expedita vitae soluta laborum dicta quas sunt debitis ipsum, in cupiditate, dolores illum omnis. Alias?
+        </div>
+        
+    </div>
+    <div class="servicos_card">
+        <img src="{% static 'omWeb/img/4.jpg' %}" alt="">
+        <div class="title">Titulo</div>
+        <div class="desc">Essa é uma descrição
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum nulla debitis cupiditate recusandae non? Expedita vitae soluta laborum dicta quas sunt debitis ipsum, in cupiditate, dolores illum omnis. Alias?
+        </div>
+        
+    </div>
+  
+    
+   
+</div>
+
+<h1>Produtos</h1>
+                                           <!-- divi para Produtos -->
+
+<div class="produto">
+   
+   
+  
+    <div class="produto_card">
+        <img src="{% static 'omWeb/img/p3.jpg' %}" alt="">
+        <div class="content">
+            <p class="titulo">Switch 24 portas</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis inventore ratione totam illo id temporibus?</p>
+        </div>
+    </div>
+    <div class="produto_card">
+        <img src="{% static 'omWeb/img/p5.jpg' %}" alt="">
+        <div class="content">
+            <p class="titulo">Teclado Retro-luminoso</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis inventore ratione totam illo id temporibus?</p>
+        </div>
+    </div>
+    <div class="produto_card">
+        <img src="{% static 'omWeb/img/p6.jpg' %}" alt="">
+        <div class="content">
+            <p class="titulo">Kit Gamer</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis inventore ratione totam illo id temporibus?</p>
+        </div>
+    </div>
+    <div class="produto_card">
+        <img src="{% static 'omWeb/img/p2.jpg' %}" alt="">
+        <div class="content">
+            <p class="titulo">Cabo Par Trançado</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis inventore ratione totam illo id temporibus?</p>
+        </div>
+    </div>
+</div>
+
+
+<h1>Parceiros</h1>
+{% endblock %}

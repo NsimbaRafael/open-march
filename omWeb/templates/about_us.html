@@ -1,0 +1,13 @@
+{% extends 'partials/base.html' %}
+{% block conteudo %}
+{% for teste in testes %}
+    {{ teste.title }} <p>
+    {% if teste.image %}
+        <img src="{{ teste.image.url }}" alt="{{ teste.title }}"    >
+        <p></p>
+    {% else %}
+        Nenhuma imagem disponível.
+        <p></p>
+    {% endif %}
+{% endfor %}
+{% endblock %}
