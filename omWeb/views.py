@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Image, Servico
+from .models import Image, Servico, OM
 
 # Create your views here.
 def index(request):
@@ -7,12 +7,14 @@ def index(request):
     return render(request, 'index.html', {'servicos': servico})
 
 def about_us(request):
-    teste = Image.objects.all()
-    return render(request, 'about_us.html', {'testes': teste})
+    om = OM.objects.all()
+    return render(request, 'about_us.html', {'om': om})
 
 def servicesProduct(request):
-    return render(request, 'produtoServices.html')
+    servico = Servico.objects.all()
+    return render(request, 'produtoServices.html', {'servicos': servico})
 
 def localizacao(request):
-    return render(request, 'localizacao.html')
+    om = OM.objects.all()
+    return render(request, 'localizacao.html', {'om': om})
 

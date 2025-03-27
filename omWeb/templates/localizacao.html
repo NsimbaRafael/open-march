@@ -1,4 +1,60 @@
 {% extends 'partials/base.html' %}
 
 {% block conteudo %}
+
+<div class="coverLocal">
+    
+    <img src="" alt="">
+    <div class="text">
+        <p class="p1">Onde estamos</p>
+        <p class="p2">Confira abaixo onde nos achar</p>
+    </div>
+</div>
+<div class="descricao">
+    {% for i in om %}
+    <img src="" alt="">
+    <div class="text">
+        <p>{{i.desc_social_network}}</p>
+    </div>
+    {% endfor %}
+
+</div>
+
+<div class="all_local">
+    
+    <div class="localCard">
+        <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <p>Whatsapp</p>
+    </div>
+    <div class="localCard">
+        <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+        <p>facebook</p>
+    </div>
+    <div class="localCard">
+        <a href="" target="_blank"><i class="fab fa-instagram"></i></i></a>
+        <p>Instagram</p>
+    </div>
+    <div class="localCard">
+        <a href="" target="_blank"><i class="fab fa-linkedin"></i></i></a>
+        <p>Linkedin</p>
+    </div>
+</div>
+
+
+<div class="formulario">
+<p>Também podes entrar em contato apartir do nossa caixa de email</p>
+
+<form action="" method="post">
+    <div class="input_nome">
+        <input type="text" name="" id="" placeholder="Nome">
+        <input type="text" name="" id="" placeholder="Sobrenome">
+    </div>
+    <input type="email" name="" id="" placeholder="Insira email">
+    <textarea name="" id="" placeholder="Mensagem"></textarea>
+    <input type="submit" value="Enviar">
+</form>
+
+</div>
+
+
 {% endblock  %}

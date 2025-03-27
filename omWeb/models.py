@@ -23,3 +23,19 @@ class Produto(models.Model):
     
     def __str__(self):
         return self.nome
+    
+
+
+class OM(models.Model):
+    nome = models.CharField(max_length=150)
+    ceo = models.CharField(max_length=250)
+    ceo_words = models.TextField()
+    visao = models.TextField()
+    misao = models.TextField()
+    objectivo = models.TextField()
+    resposabilidade = models.TextField()
+    desc_social_network = models.TextField()
+    image_ceo = models.ImageField(upload_to='images/')
+    
+    def __str__(self):
+        return self.nome

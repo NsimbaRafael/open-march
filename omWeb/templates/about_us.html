@@ -4,5 +4,13 @@
 <p class="about_usNome">Open march</p>
 <hr>
 
+    {% for i in om %}
+    
+        <p>{{i.ceo_words}}</p>
+        <p>{{i.nome}}</p>
+        <p>{{i.ceo}}</p>
+    
+    {% endfor %}
+
 
 {% endblock %}

@@ -111,65 +111,19 @@
 
 <h1>Serviços</h1>
 <div class="servicos">
-    <!-- {% for servico in servicos %}
-    <div class="servicos_card">
-        <img src="img/1.jpg" alt="">
-        <div class="title">{{servico.nome}}</div>
-        <div class="desc">{{servico.desc}}</div>
-        {% endfor %} -->
-     <div class="servicos_card">
-        <img src="{% static 'omWeb/img/1.jpg' %}" alt="">
-        <div class="title">Titulo</div>
-        <div class="desc">Essa é uma descrição
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repudiandae harum repellat iusto corrupti quaerat cum, vel ea, voluptatibus corporis cupiditate nemo unde quasi, dicta hic eveniet maiores voluptatem magni?
-        </div>
-    </div>
-    <div class="servicos_card">
-        <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
-        <div class="title">Titulo</div>
-        <div class="desc">Essa é uma descrição
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nam quae officiis fugiat blanditiis, magni nulla est ullam molestias atque tempora laboriosam. Molestias ipsa doloremque voluptate tenetur autem expedita tempora?
-        </div>
-    </div>
-    <div class="servicos_card">
-        <img src="{% static 'omWeb/img/3.jpg' %}" alt="">
-        <div class="title">Titulo</div>
-        <div class="desc">Essa é uma descrição
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum nulla debitis cupiditate recusandae non? Expedita vitae soluta laborum dicta quas sunt debitis ipsum, in cupiditate, dolores illum omnis. Alias?
-        </div>
-        
-    </div>
-    <div class="servicos_card">
-        <img src="{% static 'omWeb/img/4.jpg' %}" alt="">
-        <div class="title">Titulo</div>
-        <div class="desc">Essa é uma descrição
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum nulla debitis cupiditate recusandae non? Expedita vitae soluta laborum dicta quas sunt debitis ipsum, in cupiditate, dolores illum omnis. Alias?
-        </div>
-        
-    </div>
-    <div class="servicos_card">
-        <img src="{% static 'omWeb/img/5.jpg' %}" alt="">
-        <div class="title">Titulo</div>
-        <div class="desc">Essa é uma descrição
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum nulla debitis cupiditate recusandae non? Expedita vitae soluta laborum dicta quas sunt debitis ipsum, in cupiditate, dolores illum omnis. Alias?
-        </div>
-        
-    </div>
-    <div class="servicos_card">
-        <img src="{% static 'omWeb/img/4.jpg' %}" alt="">
-        <div class="title">Titulo</div>
-        <div class="desc">Essa é uma descrição
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea cum nulla debitis cupiditate recusandae non? Expedita vitae soluta laborum dicta quas sunt debitis ipsum, in cupiditate, dolores illum omnis. Alias?
-        </div>
-        
-    </div>
-  
-    
-   
-</div>
 
+    {% for servico in servicos %}
+    <div class="servicos_card">
+        <img src="{{ servico.image }}" alt="{{ servico.nome }}">
+    <div class="title">{{servico.nome}}</div>
+    <div class="desc">{{servico.desc}}</div>
+</div>  
+    {% endfor %}
+  </div>
+
+  <!-- divi para Produtos -->
 <h1>Produtos</h1>
-                                           <!-- divi para Produtos -->
+                                           
 
 <div class="produto">
    
@@ -205,45 +159,45 @@
     </div>
 </div>
 
+    <!-- 
+    <div class="atendimentos_all">
+        <div class="title">
+            <p class="p1">Central de informações</p>
+            <p class="p2">E atendimento</p>
+        </div>
+        <div class="atendimentos">
+            <div class="atendimentos_card">
+                <p class="titulo">Painel Informativo </p>
+                <p class="desc">Fique por dentro das últimas notícias e análises essenciais sobre a Folha Tributária. Boletins Carga Tributária e Preço do Petróleo neste painel informativo.</p>
+                <div class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fas fa-envelope"></i>
+                    <i class="far fa-file-alt"></i>
+                </div>
+            </div>
+            <div class="atendimentos_card">
+                <p class="titulo">Canais de Denúncia </p>
+                <p class="desc">Utilize os nossos canais de comunicação Fidedignos para denúncias: WhatsApp, E-Mail e Formulário Electrónicos.</p>
+                <div class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fas fa-envelope"></i>
+                    <i class="far fa-file-alt"></i>
+                </div>
 
-<div class="atendimentos_all">
-    <div class="title">
-        <p class="p1">Central de informações</p>
-        <p class="p2">E atendimento</p>
-    </div>
-    <div class="atendimentos">
-        <div class="atendimentos_card">
-            <p class="titulo">Painel Informativo </p>
-            <p class="desc">Fique por dentro das últimas notícias e análises essenciais sobre a Folha Tributária. Boletins Carga Tributária e Preço do Petróleo neste painel informativo.</p>
-            <div class="icon">
-                <i class="fab fa-whatsapp"></i>
-                <i class="fas fa-envelope"></i>
-                <i class="far fa-file-alt"></i>
+            </div>
+            <div class="atendimentos_card">
+                <p class="titulo">Canais de Atendimento </p>
+                <p class="desc">Estamos aqui para ajudar! Utilize nossos canais de atendimento, incluindo WhatsApp, Perguntas Frequentes, Atendimento Telefônico e Formulário de Contato do Website.</p>
+                <div class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fas fa-envelope"></i>
+                    <i class="far fa-file-alt"></i>
+                </div>
+
             </div>
         </div>
-        <div class="atendimentos_card">
-            <p class="titulo">Canais de Denúncia </p>
-            <p class="desc">Utilize os nossos canais de comunicação Fidedignos para denúncias: WhatsApp, E-Mail e Formulário Electrónicos.</p>
-            <div class="icon">
-                <i class="fab fa-whatsapp"></i>
-                <i class="fas fa-envelope"></i>
-                <i class="far fa-file-alt"></i>
-            </div>
 
-        </div>
-        <div class="atendimentos_card">
-            <p class="titulo">Canais de Atendimento </p>
-            <p class="desc">Estamos aqui para ajudar! Utilize nossos canais de atendimento, incluindo WhatsApp, Perguntas Frequentes, Atendimento Telefônico e Formulário de Contato do Website.</p>
-            <div class="icon">
-                <i class="fab fa-whatsapp"></i>
-                <i class="fas fa-envelope"></i>
-                <i class="far fa-file-alt"></i>
-            </div>
-
-        </div>
-    </div>
-
-</div>
+    </div> -->
 
 
 
