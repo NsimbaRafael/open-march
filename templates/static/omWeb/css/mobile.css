@@ -1,6 +1,9 @@
 @media screen and (max-width:678px) {
     .slider .list .item .content{
         padding-right: 0;
+        
+        width: 100%;
+        padding: 10px;
     }
     .slider .list .item .content .title{
         font-size: 30px;
@@ -11,6 +14,7 @@
     .nextPrevArrows{
         top: 90%;
         right: 5%;
+        
        
     }
     .slider .list .item .content .type{
@@ -19,5 +23,50 @@
         line-height: 120%;
     
     }
+    .nextPrevArrows button{
+        margin-left: -8px;    
+    }
+    .servicos, .produto{
+        flex-direction: column;
+    }
+    .servicos .servicos_card, .produto .produto_card{
+        width: 95%;
+        margin: 20px auto;
+    }
+    .produto .produto_card img{
+        height: 400px;
+    }
     
+}
+
+/* Media query para telas menores (ex: celulares) */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%; /* Posiciona o menu abaixo do header */
+        left: 0;
+        width: 100%;
+        display: none; /* Oculta o menu por padrão */
+    }
+
+    header nav a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        margin-right:0;
+    }
+
+    .mobile-menu-button {
+        display: block; /* Mostra o botão hambúrguer */
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+    .ceo-section {
+        flex-direction: column;
+    
+    }
 }

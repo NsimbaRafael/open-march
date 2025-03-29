@@ -38,7 +38,7 @@
                 <div class="type">Visão</div>
                 <div class="desc">Ser reconhecida como uma empresa líder e inovadora, capaz de transformar desafios em oportunidades e impulsionar o crescimento sustentável dos setores de Oil & Gás, Banca e Seguros, e Indústria Mineira.!</div>
                 <div class="btn">
-                    <button>See more...</button>
+                    <button>Ver mais...</button>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                 <div class="desc">Fornecer bens e serviços de alta qualidade para os setores de Oil & Gás, Banca e Seguros, e Indústria Mineira, agregando valor aos nossos clientes por meio de soluções inovadoras, eficientes e sustentáveis.
                 </div>
                 <div class="btn">
-                    <button>See more...</button>
+                    <button>Ver mais...</button>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
                 <div class="type">Objectivo</div>
                 <div class="desc">Ser a principal referência no fornecimento de bens e serviços para os setores de Oil & Gás, Banca e Seguros, e Indústria Mineira, destacando-se pela excelência, inovação e compromisso inabalável com a sustentabilidade.</div>
                 <div class="btn">
-                    <button>See more...</button>
+                    <button>Ver mais...</button>
                 </div>
             </div>
         </div>
@@ -69,10 +69,10 @@
             <img src="{% static 'omWeb/img/5.jpg' %}" alt="">
             <div class="content">
                 <div class="title">Open March</div>
-                <div class="type">Responsabilidade</div>
-                <div class="desc">Nossa responsabilidade social começa pelo que está mais próximo: a natureza e o meio ambiente. Entendemos que tudo depende do equilíbrio ambiental, pois dele vêm os recursos que sustentam a vida, os negócios e o progresso.</div>
+                <div class="type">Valores</div>
+                <div class="desc">Integridade, excelência, inovação, respeito e compromisso com a satisfação do cliente..</div>
                 <div class="btn">
-                    <button>See more...</button>
+                    <button>Ver mais...</button>
                 </div>
             </div>
         </div>
@@ -111,15 +111,42 @@
 
 <h1>Serviços</h1>
 <div class="servicos">
-
-    {% for servico in servicos %}
     <div class="servicos_card">
-        <img src="{{ servico.image }}" alt="{{ servico.nome }}">
-    <div class="title">{{servico.nome}}</div>
-    <div class="desc">{{servico.desc}}</div>
+        <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+    <div class="title">Serviços gráficos e impressão digital e industria</div>
+    <div class="desc"> Oferecemos uma gama completa de serviços gráficos e de impressão digital de alta qualidade, projetados para atender às diversas necessidades da sua empresa. Da criação de designs impactantes à produção de materiais impressos vibrantes e profissionais, somos seu parceiro estratégico para fortalecer sua identidade visual e alcançar seus objetivos de comunicação. </div>
+</div> 
+
+<div class="servicos_card">
+        <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+    <div class="title">Fornecimento de aditivos </div>
+    <div class="desc"> Oferecemos um amplo portfólio de aditivos de alta qualidade, essenciais para diversas aplicações industriais. Nossa expertise no fornecimento de aditivos garante que sua empresa tenha acesso aos produtos certos para aprimorar a performance, a durabilidade e a qualidade de seus produtos e processos. </div>
+</div> 
+
+<div class="servicos_card">
+    <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+<div class="title">Equipamentos de segurança e combate a incêndio </div>
+<div class="desc"> Oferecemos uma linha completa de equipamentos de segurança e combate a incêndio de alta qualidade, essenciais para garantir a proteção de pessoas, patrimônios e ambientes. Nossa expertise no fornecimento desses equipamentos garante que sua empresa ou residência esteja devidamente equipada para prevenir e combater incêndios, além de garantir a segurança em diversas situações. </div>  
 </div>  
-    {% endfor %}
-  </div>
+
+<div class="servicos_card">
+    <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+<div class="title">Soluções em Equipamentos de Telecomunicações para Conectar seu Mundo</div>
+<div class="desc">Oferecemos uma ampla gama de equipamentos de telecomunicações de última geração, projetados para atender às diversas necessidades de comunicação da sua empresa, residência ou projeto. Seja para melhorar a comunicação interna, expandir a conectividade ou implementar soluções de rede avançadas, somos seu parceiro confiável em tecnologia de comunicação.</div>
+</div> 
+<div class="servicos_card">
+    <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+<div class="title">Equipamentos de segurança e combate a incêndio </div>
+<div class="desc"> Oferecemos uma linha completa de equipamentos de segurança e combate a incêndio de alta qualidade, essenciais para garantir a proteção de pessoas, patrimônios e ambientes. Nossa expertise no fornecimento desses equipamentos garante que sua empresa ou residência esteja devidamente equipada para prevenir e combater incêndios, além de garantir a segurança em diversas situações. </div>  
+</div>  
+<div class="servicos_card">
+    <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+<div class="title">Serviços gráficos e impressão digital e industria</div>
+<div class="desc"> Oferecemos uma gama completa de serviços gráficos e de impressão digital de alta qualidade, projetados para atender às diversas necessidades da sua empresa. Da criação de designs impactantes à produção de materiais impressos vibrantes e profissionais, somos seu parceiro estratégico para fortalecer sua identidade visual e alcançar seus objetivos de comunicação. </div>
+</div> 
+ 
+
+</div> 
 
   <!-- divi para Produtos -->
 <h1>Produtos</h1>

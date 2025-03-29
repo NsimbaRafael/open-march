@@ -27,17 +27,16 @@
 </head>
 <body>
 
+   
     <header>
         <nav>
-            <div class="logo">Open <span>March</span></div>
-           <div class="mene">
+            <div class="logo"><span>Open March</span></div>
             <a href="{% url 'index' %}" class="active">Home</a>
             <a href="{% url 'about_us' %}">Sobre nós</a>
             <a href="{% url 'servicesProduct' %}">Produtos e Serviços</a>
             <a href="{% url 'localizacao' %}">Onde estamos</a>
-           </div>
-            
         </nav>
+        <button class="mobile-menu-button">&#9776;</button>
     </header>
     <main>
         {% block conteudo %}

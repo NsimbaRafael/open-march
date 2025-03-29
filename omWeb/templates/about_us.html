@@ -1,16 +1,93 @@
 {% extends 'partials/base.html' %}
 {% block conteudo %}
+{% load static %}
 
-<p class="about_usNome">Open march</p>
-<hr>
 
+<div class="ceo-section">
     {% for i in om %}
+    <div class="ceo-photo">
+        <img src="{% static 'omWeb/img/kiala.png' %}" alt="">
+    </div>
+    <div class="ceo-message">
+        <h2>Mensagem do CEO</h2>
+        <p>Prezados Colaboradores, Parceiros, Clientes e Comunidade Angolana,</p><br>
+        <p>É com grande satisfação e um profundo senso de responsabilidade que me dirijo a vocês hoje. A nossa empresa, com raízes firmes no coração de Angola, orgulha-se da sua atuação estratégica no vital setor de petróleo e gás, ao mesmo tempo em que se diversifica e expande para oferecer uma gama abrangente de serviços essenciais.</p>
+        <br>
+        <p>Reconhecemos a importância do nosso papel no desenvolvimento económico de Angola. No setor de petróleo e gás, continuamos firmes no nosso compromisso com a excelência operacional, a segurança e a sustentabilidade ambiental. Estamos empenhados em contribuir para o aproveitamento responsável dos recursos naturais do nosso país, impulsionando o crescimento e a criação de valor a longo prazo.</p>
+      <br>  <p> Paralelamente, a nossa empresa tem orgulho em oferecer uma vasta gama de serviços que apoiam diversas indústrias e necessidades em Angola. Desde a qualidade e precisão da nossa impressão gráfica e industrial, passando pelo fornecimento de aditivos essenciais para diversos setores, até às soluções inovadoras em telecomunicações, estamos dedicados a fornecer soluções de alta qualidade e confiabilidade.
+            </p><br>
+            <p>CEO, <span>Nlando Kiala Rafael</span></p>
+
+    </div>
+    {% endfor %}   
+</div>
+
+<div class="team-section">
+    <div class="team-member">
+        <img src="img/p1.jpg" alt="CEO Photo">
+        <h3>Hoon</h3>
+        <p>Main Title</p>
+    </div>
+    <div class="team-member">
+        <img src="img/p1.jpg" alt="CEO Photo">
+        <h3>Teme</h3>
+        <p>Main Title</p>
+    </div>
+    <div class="team-member">
+        <img src="img/p1.jpg" alt="CEO Photo">
+        <h3>Tem</h3>
+        <p>Main Title</p>
+    </div>
+    <div class="team-member">
+        <img src="img/p1.jpg" alt="CEO Photo">
+        <h3>Nemer</h3>
+        <p>Main Title</p>
+    </div>
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-icon">
+            <i class="fas fa-eye"></i> 
+        </div>
+        <div class="card-content">
+            <h3>Nossa Visão</h3>
+            <p>Ser reconhecida como uma empresa líder e inovadora, capaz de transformar desafios em oportunidades e impulsionar o crescimento sustentável dos setores de Oil & Gás, Banca e Seguros, e Indústria Mineira.!</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">
+            <i class="fas fa-rocket"></i>
+        </div>
+        <div class="card-content">
+            <h3>Nossa Missão</h3>
+            <p>FFornecer bens e serviços de alta qualidade para os setores de Oil & Gás, Banca e Seguros, e Indústria Mineira, agregando valor aos nossos clientes por meio de soluções inovadoras, eficientes e sustentáveis.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">
+            <i class="fas fa-heart"></i>
+        </div>
+        <div class="card-content">
+            <h3>Nossos Valores</h3>
+            <p>Integridade, excelência, inovação, respeito e compromisso com a satisfação do cliente.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="card-content">
+            <i class="fa-handshake"></i>
+            <h3>Responsabilidade Social</h3>
+            <p>
+                Nossa responsabilidade social começa pelo que está mais próximo: a natureza e o meio ambiente. Entendemos que tudo depende do equilíbrio ambiental, pois dele vêm os recursos que sustentam a vida, os negócios e o progresso.</p>
+        </div>
+    </div>
+</div>
     
-        <p>{{i.ceo_words}}</p>
-        <p>{{i.nome}}</p>
-        <p>{{i.ceo}}</p>
-    
-    {% endfor %}
 
 
 {% endblock %}

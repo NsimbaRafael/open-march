@@ -1,52 +1,44 @@
 {% extends 'partials/base.html' %}
 
 {% block conteudo %}
-
+{% load static %}
   <!-- divi para Produtos -->
   <h1>Produtos</h1>
 
 
   <div class="produto">
-
-
-
-      <div class="produto_card">
-          <img src="img/p3.jpg" alt="">
-          <div class="content">
-              <p class="titulo">Switch 24 portas</p>
-              <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio
-                  libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis
-                  inventore ratione totam illo id temporibus?</p>
-          </div>
-      </div>
-      <div class="produto_card">
-          <img src="img/p5.jpg" alt="">
-          <div class="content">
-              <p class="titulo">Teclado Retro-luminoso</p>
-              <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio
-                  libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis
-                  inventore ratione totam illo id temporibus?</p>
-          </div>
-      </div>
-      <div class="produto_card">
-          <img src="img/p6.jpg" alt="">
-          <div class="content">
-              <p class="titulo">Kit Gamer</p>
-              <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio
-                  libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis
-                  inventore ratione totam illo id temporibus?</p>
-          </div>
-      </div>
-      <div class="produto_card">
-          <img src="img/p2.jpg" alt="">
-          <div class="content">
-              <p class="titulo">Cabo Par Trançado</p>
-              <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio
-                  libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis
-                  inventore ratione totam illo id temporibus?</p>
-          </div>
-      </div>
-  </div>
+   
+   
+  
+    <div class="produto_card">
+        <img src="{% static 'omWeb/img/p3.jpg' %}" alt="">
+        <div class="content">
+            <p class="titulo">Switch 24 portas</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis inventore ratione totam illo id temporibus?</p>
+        </div>
+    </div>
+    <div class="produto_card">
+        <img src="{% static 'omWeb/img/p5.jpg' %}" alt="">
+        <div class="content">
+            <p class="titulo">Teclado Retro-luminoso</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis inventore ratione totam illo id temporibus?</p>
+        </div>
+    </div>
+    <div class="produto_card">
+        <img src="{% static 'omWeb/img/p6.jpg' %}" alt="">
+        <div class="content">
+            <p class="titulo">Kit Gamer</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis inventore ratione totam illo id temporibus?</p>
+        </div>
+    </div>
+    <div class="produto_card">
+        <img src="{% static 'omWeb/img/p2.jpg' %}" alt="">
+        <div class="content">
+            <p class="titulo">Cabo Par Trançado</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, atque quos. Optio libero doloremque minus, incidunt laudantium eligendi quo tempore eveniet, eius fugiat veritatis inventore ratione totam illo id temporibus?</p>
+        </div>
+    </div>
+</div>
 
 
 
@@ -54,15 +46,45 @@
 
   <h1>Serviços</h1>
   <div class="servicos">
-
-    {% for servico in servicos %}
     <div class="servicos_card">
-        <img src="{{ servico.image }}" alt="{{ servico.nome }}">
-    <div class="title">{{servico.nome}}</div>
-    <div class="desc">{{servico.desc}}</div>
+        <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+    <div class="title">Serviços gráficos e impressão digital e industria</div>
+    <div class="desc"> Oferecemos uma gama completa de serviços gráficos e de impressão digital de alta qualidade, projetados para atender às diversas necessidades da sua empresa. Da criação de designs impactantes à produção de materiais impressos vibrantes e profissionais, somos seu parceiro estratégico para fortalecer sua identidade visual e alcançar seus objetivos de comunicação. </div>
+</div> 
+
+<div class="servicos_card">
+        <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+    <div class="title">Fornecimento de aditivos </div>
+    <div class="desc"> Oferecemos um amplo portfólio de aditivos de alta qualidade, essenciais para diversas aplicações industriais. Nossa expertise no fornecimento de aditivos garante que sua empresa tenha acesso aos produtos certos para aprimorar a performance, a durabilidade e a qualidade de seus produtos e processos. </div>
+</div> 
+
+<div class="servicos_card">
+    <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+<div class="title">Equipamentos de segurança e combate a incêndio </div>
+<div class="desc"> Oferecemos uma linha completa de equipamentos de segurança e combate a incêndio de alta qualidade, essenciais para garantir a proteção de pessoas, patrimônios e ambientes. Nossa expertise no fornecimento desses equipamentos garante que sua empresa ou residência esteja devidamente equipada para prevenir e combater incêndios, além de garantir a segurança em diversas situações. </div>  
 </div>  
-    {% endfor %}
-  </div>
+
+<div class="servicos_card">
+    <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+<div class="title">Soluções em Equipamentos de Telecomunicações para Conectar seu Mundo</div>
+<div class="desc">Oferecemos uma ampla gama de equipamentos de telecomunicações de última geração, projetados para atender às diversas necessidades de comunicação da sua empresa, residência ou projeto. Seja para melhorar a comunicação interna, expandir a conectividade ou implementar soluções de rede avançadas, somos seu parceiro confiável em tecnologia de comunicação.</div>
+</div> 
+<div class="servicos_card">
+    <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+<div class="title">Equipamentos de segurança e combate a incêndio </div>
+<div class="desc"> Oferecemos uma linha completa de equipamentos de segurança e combate a incêndio de alta qualidade, essenciais para garantir a proteção de pessoas, patrimônios e ambientes. Nossa expertise no fornecimento desses equipamentos garante que sua empresa ou residência esteja devidamente equipada para prevenir e combater incêndios, além de garantir a segurança em diversas situações. </div>  
+</div>  
+<div class="servicos_card">
+    <img src="{% static 'omWeb/img/2.jpg' %}" alt="">
+<div class="title">Serviços gráficos e impressão digital e industria</div>
+<div class="desc"> Oferecemos uma gama completa de serviços gráficos e de impressão digital de alta qualidade, projetados para atender às diversas necessidades da sua empresa. Da criação de designs impactantes à produção de materiais impressos vibrantes e profissionais, somos seu parceiro estratégico para fortalecer sua identidade visual e alcançar seus objetivos de comunicação. </div>
+</div> 
+ 
+
+</div> 
+
+
+  
 
 
 
